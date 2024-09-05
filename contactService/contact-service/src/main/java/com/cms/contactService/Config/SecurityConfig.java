@@ -14,8 +14,6 @@ import org.springframework.security.web.SecurityFilterChain;
 import  org.springframework.security.config.annotation.web.builders.*;
 import org.springframework.web.client.RestTemplate;
 
-import java.security.AllPermission;
-
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {

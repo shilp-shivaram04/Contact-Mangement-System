@@ -1,20 +1,17 @@
 package com.cms.contactService.Controller;
 
 import com.cms.contactService.Entity.CustomerContact;
-import com.cms.contactService.Repository.CustomerContactRepo;
 import com.cms.contactService.Service.CustomerContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 @RestController
 public class CustomerController {
     @Autowired
     private CustomerContactService customerContactService;
-    private CustomerContactRepo customerContactRepo;
 
     @PostMapping("/customer/contact")
     public ResponseEntity<CustomerContact> createCustomerContact(@RequestBody CustomerContact customerContact) {

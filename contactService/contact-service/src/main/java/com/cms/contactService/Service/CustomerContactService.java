@@ -1,7 +1,6 @@
 package com.cms.contactService.Service;
 
 import com.cms.contactService.Entity.CustomerContact;
-import com.cms.contactService.Repository.CustomerContactRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -13,8 +12,6 @@ public class CustomerContactService {
 
     @Autowired
     private RestTemplate restTemplate;
-
-    private CustomerContactRepo customerContactRepo;
 
     private final String dbServiceUrl = "http://localhost:8080";
 
