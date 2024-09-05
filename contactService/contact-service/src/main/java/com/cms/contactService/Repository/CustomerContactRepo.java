@@ -1,7 +1,7 @@
 package com.cms.contactService.Repository;
 
 import com.cms.contactService.Entity.CustomerContact;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CustomerContactRepo extends CrudRepository<CustomerContact, Long> {
+public interface CustomerContactRepo extends JpaRepository<CustomerContact, Long> {
 }
